@@ -1,0 +1,21 @@
+# Functional Requirements and Notes
+
+Light/Dark Mode Toggle - takes system preference default but can be ovveridden in browser with toggle
+
+- Dark mode needs three toggles, light, dark, and system default - https://github.com/scottaohara/aria-switch-control
+
+- what HTML markup do we need? (Accesible) - 
+
+- US JS to switch between light and dark and system preference - https://codepen.io/renddrew/pen/bRomab?editors=1100
+
+
+CSS Variables (Custom Properties)
+https://css-tricks.com/updating-a-css-variable-with-javascript/
+
+Prefers-color-scheme media query - https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+
+Accesibility
+
+-use correct heading tags
+-add screenreader only text for key elements - screenreaders both reading the text provided and the legend of the surrounding code to prive context.
+
