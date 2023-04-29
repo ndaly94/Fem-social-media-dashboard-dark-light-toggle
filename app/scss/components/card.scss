@@ -1,0 +1,5 @@
+@use '../util' as *;
+// we are importing the util as a wildcard (*) so that we can identify the variables by their name rather then the namespace
+.card {
+    padding: rem(20);
+}

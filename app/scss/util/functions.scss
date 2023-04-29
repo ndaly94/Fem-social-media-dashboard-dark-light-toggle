@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // source https://css-tricks.com/snippets/sass/px-to-em-functions/
 // 16 pixels = 1 rem
 @function rem($pixels, $context: 16) {

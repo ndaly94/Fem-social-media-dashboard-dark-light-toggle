@@ -1,3 +1,6 @@
+@use '../util' as *;
+// we are importing the util as a wildcard (*) so that we can identify the variables by their name rather then the namespace
+
 .toggle {
     &__button {
         width: rem(16);
