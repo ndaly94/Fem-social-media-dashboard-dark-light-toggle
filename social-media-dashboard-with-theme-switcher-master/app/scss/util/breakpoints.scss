@@ -13,15 +13,16 @@ $breakpoints-down: (
     'medium': '63.9375em',
     'large': '87.4375em',
 );
-
+//used for min-width design
 @mixin breakpoint($size) {
     @media (min-width: map-get($breakpoints-up, $size)) {
     @content;
     }
 }
-
+//used for max widht design
 @mixin breakpoint-down($size){
     @media (max-width: map-get($breakpoints-down, $size)) {
         @content;
     }
 }
+
