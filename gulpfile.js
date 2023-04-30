@@ -60,3 +60,4 @@ function watchTask() {
 
 // Default Gulp Task - tells us what will run if we run 'gulp' command in terminal
 exports.default = series(scssTask, jsTask, browserSyncServ, watchTask)
+
