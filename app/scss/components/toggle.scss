@@ -2,10 +2,27 @@
 // we are importing the util as a wildcard (*) so that we can identify the variables by their name rather then the namespace
 
 .toggle {
+    border: none;
+
+    &__wrapper {
+
+    }
+    input[type="radio"]{
+
+
+    }
+
+    & __background {
+
+    }
     &__button {
         width: rem(16);
         height: rem(16);
         border-radius: 50%;
         background-color: var(--toggle);
+    }
+
+    label {
+        
     }
 }
