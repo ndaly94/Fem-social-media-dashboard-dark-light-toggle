@@ -15,7 +15,7 @@ sass.compiler = require('dart-sass');
 
 // Sass Task
 function scssTask() {
-    return src('app/scss/style.css', { sourcemaps: true})
+    return src('app/scss/style.scss', { sourcemaps: true})
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest('dist', { sourcemaps: '.'}));
