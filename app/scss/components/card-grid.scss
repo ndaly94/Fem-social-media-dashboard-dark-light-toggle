@@ -1,0 +1,16 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .card__subtitle{
+
+    }
+
+    .card__count {
+
+    }
+    .card__change {
+
+    }
+}
