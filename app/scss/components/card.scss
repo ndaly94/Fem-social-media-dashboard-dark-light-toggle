@@ -4,21 +4,29 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(30);
-        @include breakpoint(medium) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @include breakpoint(large) {
+
+    @include breakpoint(medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(large) {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 .card {
-    background: var(--dark-card);
+    position: relative;
+    overflow: hidden;
+    background: var(-card-bg);
     color: var(--dark-text1);
     padding: rem(25);
     border-radius: rem(5);
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    transition: background 150ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background: var(--card-hover);
+    }
     
 
     &--facebook{
@@ -31,7 +39,8 @@
 
     &--instagram{
         padding-top: rem(30);
-       &::before {
+       
+        &::before {
         content: '';
         display:block;
         position: absolute;
@@ -62,38 +71,23 @@
     &__subtitle {
         font-size: rem(14);
         font-weight: 700;
+        color: var(--text-color2);
     }
 
     &__icon {
         margin-right: rem(8);
-
-        &--faceboook{
-
-        }
-
-        &--twitter{
-            
-        }
-
-        &--instagram{
-            
-        }
-
-        &--youtube{
-            
-        }
-
         
     }
     &__username{
         font-size: rem(12);
         font-weight: 700;
+        color: var(--text-color2);
     }
     &__followers{
-        
+        margin-bottom: rem(25);
     }
     &__count {
-        color: var(--light-bg);
+        color: var(--text-color);
         font-weight: 700;
         letter-spacing: rem(-2);
         line-height: 1;
@@ -108,8 +102,9 @@
     }
     &__label {
         font-size: rem(12);
+        letter-spacing: rem(5);
         font-weight: 400;
-        color: var(--dark-text1);
+        color: var(--text-color2);
         text-transform: uppercase;
     }
 
@@ -121,7 +116,6 @@
         font-weight: 700;
 
         &--up{
-            @extend .card__change;
             color: var(--limegreen)
         }
         
@@ -131,8 +125,5 @@
         img {
             margin-right: rem(4);
         }
-    }
-    &__number {
-        margin-right: rem(4);
     }
 }

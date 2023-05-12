@@ -11,7 +11,7 @@ const browsersync = require('browser-sync').create();
 
 
 // use dart-sass for @sure
-sass.compiler = require('dart-sass');
+//sass.compiler = require('dart-sass');
 
 // Sass Task
 function scssTask() {
@@ -61,3 +61,5 @@ function watchTask() {
 // Default Gulp Task - tells us what will run if we run 'gulp' command in terminal
 exports.default = series(scssTask, jsTask, browserSyncServ, watchTask)
 
+// Build Gulp Task
+exports.build = series(scssTask, jsTask);
