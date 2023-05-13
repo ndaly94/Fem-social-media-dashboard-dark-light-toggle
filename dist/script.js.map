@@ -1,1 +1,1 @@
-{"version":3,"file":"script.js","names":[],"sources":["script.js"],"mappings":"AAAA"}
+{"version":3,"sources":["script.js"],"names":["document","getElementById","checked","querySelector","classList"],"mappings":"AAAA,aACAA,SAASC,eAAe,QAAQC,QAC7BF,SAASG,cAAc,QAAQC,UAAY,OAC3CJ,SAASG,cAAc,QAAQC,UAAY","file":"script.js","sourcesContent":["\ndocument.getElementById('dark').checked \n? (document.querySelector('body').classList = 'dark') \n: (document.querySelector('body').classList = 'light');"]}
